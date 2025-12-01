@@ -26,7 +26,7 @@ export function MamaScene({ onComplete, isActive }: MamaSceneProps) {
 
   const firstMessage = "Mi Mamá"
   const secondMessage = mamaName;
-  const thirdMessage = "Te agradezco la vida, tu amor, tus cuidados, pero sobre todo tu gran ejemplo, Y que en todo momento has sido mi amiga, gracias te amo!"
+  const thirdMessage = "Gracias por tu vida, tu amor y tu ejemplo. Gracias por cuidarme siempre. Te amo."
   
   // Handle video loading
   const handleVideoLoaded = () => {

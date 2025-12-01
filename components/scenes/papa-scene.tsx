@@ -27,7 +27,7 @@ export function PapaScene({ onComplete, isActive }: PapaSceneProps) {
   const firstMessage = "Mi Papá"
   const secondMessage = papaName;
   const thirdMessage = `
-  Gracias, papá, por la vida, por tu amor, por tu fuerza y por ser siempre mi ejemplo. Gracias por cuidarme, guiarme y creer en mí. Te amo con todo mi corazón
+  Gracias, papá, por tu amor, tu fuerza y tu ejemplo. Gracias por cuidarme y creer en mí. Te amo.
   `
   
   // Handle video loading

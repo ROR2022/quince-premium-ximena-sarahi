@@ -32,10 +32,10 @@ export default function QuinceaneraInvitation() {
   const [isPaused, setIsPaused] = useState(false)
   const [showAudioPlayer, setShowAudioPlayer] = useState(false)
 
-  const totalScenes = 13
+  const totalScenes = 12
 
   // Scenes that have their own timing control (no auto-advance)
-  const scenesWithCustomTiming = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] // TitleScene, MessageScene1, MessageScene2, NameScene, MessageScene3, ParentsScene, ReceptionScene, GalleryScene, ScheduleScene
+  const scenesWithCustomTiming = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] // TitleScene, MessageScene1, MessageScene2, NameScene, MessageScene3, ParentsScene, ReceptionScene, GalleryScene, ScheduleScene
 
   useEffect(() => {
     if (!hasStarted || isPaused || currentScene >= totalScenes - 1) return
@@ -91,15 +91,14 @@ export default function QuinceaneraInvitation() {
       {currentScene === 1 && <MessageScene1 onComplete={handleSceneComplete} isActive={!isPaused} />}
       {currentScene === 2 && <MamaScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       {currentScene === 3 && <PapaScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 4 && <AbuelosScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 5 && <ChambelanesScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 6 && <NameScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 7 && <MessageScene3 onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 8 && <ParentsScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 9 && <DateScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 10 && <ReceptionScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 11 && <GalleryScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 12 && <ScheduleScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 4 && <ChambelanesScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 5 && <NameScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 6 && <MessageScene3 onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 7 && <ParentsScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 8 && <DateScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 9 && <ReceptionScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 10 && <GalleryScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 11 && <ScheduleScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       
 
        {showAudioPlayer && <AudioPlayer src="/audio/musica.mp3" autoPlay startTime={5} />} 

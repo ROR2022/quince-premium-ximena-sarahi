@@ -32,8 +32,8 @@ export const quinceMainData = {
     },
     //Padrino Ma. Asunción Ramirez y Juan Gutiérrez
     godparents: {
-      godfather: "Ramiro",
-      godmother: "Lulu",
+      godfather: "Ramiro Cabral",
+      godmother: "Alma Cabral",
     },
     abuelos: {
       maternos:{
@@ -45,15 +45,32 @@ export const quinceMainData = {
         abuela: "Alfredo Juárez Castañeda",
       },
     },
+    /**
+     * Chambelanes :
+Jovany Cabral
+Iván Rico
+Juan Ávila
+Edgar Bañuelos 
+Christian García 
+Luis Gallegos
+Sol Chávez 
+Alejandro Domínguez 
+Luis Mena
+     */
     chambelanes: [  
-      "Joan Alejandro Fernández Juárez",
-      "Alejandro Pérez Méndez",
-      "Ricardo Jovan Avila Gómez",
-      "Franco Damián Guzmán Rojas.",
+      "Jovany Cabral",
+      "Iván Rico",
+      "Juan Ávila",
+      "Edgar Bañuelos",
+      "Christian García",
+      "Luis Gallegos",
+      "Sol Chávez",
+      "Alejandro Domínguez",
+      "Luis Mena",
     ],
     date: {
       full: "Sábado 17 de Enero 2026",
-      isoDate: "2026-01-17T12:00:00",
+      isoDate: "2026-01-17T17:00:00",
       day: "Sábado",
       dayNumber: "17",
       month: "Enero",
@@ -72,19 +89,19 @@ export const quinceMainData = {
     },
     //Misa a la 1pm parroquia Santa fe de Guadalupe, la Sauceda Guanajuato.
     ceremony: {
-      time: "12:00 hrs.",
-      venue: "Capilla Privada",
-      address: "Juan de Dios Peza 16, La Era I y II, Iztapalapa, 09860 Ciudad de México, CDMX",
+      time: "17:00 hrs.",
+      venue: "Parroquia Purísima Concepción",
+      address: "Valparaíso, Zacatecas",
       type: "Misa de Acción de Gracias",
-      ubiLink: "https://maps.app.goo.gl/Tepj9xek3J26NZSp7",
+      ubiLink: "https://maps.app.goo.gl/Vw5KxrvSrWi7XJZT9",
       ceremonyImage: "/images/quince6.jpeg",
     },
     party: {
-      time: "15:00 hrs.",
-      venue: "Recepciones La Fuente",
-      address: "Juan de Dios Peza 16, La Era I y II, Iztapalapa, 09860 Ciudad de México, CDMX",
+      time: "19:00 hrs.",
+      venue: "Auditorio Municipal",
+      address: "Valparaíso, Zacatecas",
       type: "Baile y Fiesta",
-      ubiLink: "https://maps.app.goo.gl/Tepj9xek3J26NZSp7",
+      ubiLink: "https://maps.app.goo.gl/96dShKXBMG7jF9uv6",
     },
     dressCode: "Formal - Rosa solo la quinceañera",
     restrictions: "",
@@ -174,7 +191,7 @@ export const quinceMainData = {
     backgroundImage: "/images/countdown-bg.jpg",
   },
   attendance: {
-    whatsappNumber: "5213481514862", //+52 1 348 151 4862
+    whatsappNumber: "5214922254139", //+52 1 492 225 4139
     title: "CONFIRMACIÓN DE ASISTENCIA",
     message: "Respetuosamente",
     subtitle: "Confirmar antes del evento.",
@@ -336,17 +353,17 @@ export const quinceMainData = {
   videoFondos: {
    splash: {
       id: "splash",
-      src: "/video/xs3.mp4",
+      src: "/video/xs1.mp4",
       type: "video/mp4",
     },
     title: {
       id: "title",
-      src: "/video/xs1.mp4",
+      src: "/video/xs2.mp4",
       type: "video/mp4",
     },
     message1:{
       id: "message1",
-      src: "/video/xs2.mp4",
+      src: "/video/xs3.mp4",
       type: "video/mp4",
     },
     message2:{
@@ -356,12 +373,12 @@ export const quinceMainData = {
     },
     name: {
       id: "name",
-      src: "/video/xs1.mp4",
+      src: "/video/xs5.mp4",
       type: "video/mp4",
     },
     message3:{
       id: "message3",
-      src: "/video/xs2.mp4",
+      src: "/video/xs3.mp4",
       type: "video/mp4",
     },
     parents:{
@@ -371,12 +388,12 @@ export const quinceMainData = {
     },
     date:{
       id: "date",
-      src: "/video/xs1.mp4",
+      src: "/video/xs5.mp4",
       type: "video/mp4",
     },
     reception:{
       id: "reception",
-      src: "/video/xs2.mp4",
+      src: "/video/xs3.mp4",
       type: "video/mp4",
     },
     schedule:{
@@ -386,12 +403,12 @@ export const quinceMainData = {
     },
     gallery:{
       id: "gallery",
-      src: "/video/xs1.mp4",
+      src: "/video/xs4.mp4",
       type: "video/mp4",
     },
     mama:{
       id: "mama",
-      src: "/video/xs2.mp4",
+      src: "/video/xs3.mp4",
       type: "video/mp4",
     },
     papa:{
@@ -401,7 +418,7 @@ export const quinceMainData = {
     },
     abuelos:{
       id: "abuelos",
-      src: "/video/xs1.mp4",
+      src: "/video/xs5.mp4",
       type: "video/mp4",
     },
   }
