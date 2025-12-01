@@ -58,7 +58,7 @@ Alejandro Domínguez 
 Luis Mena
      */
     chambelanes: [  
-      "Jovany Cabral",
+      "Jovanni Cabral",
       "Iván Rico",
       "Juan Ávila",
       "Edgar Bañuelos",

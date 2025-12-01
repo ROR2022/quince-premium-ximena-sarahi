@@ -141,7 +141,7 @@ export function MamaScene({ onComplete, isActive }: MamaSceneProps) {
               <TypewriterText
                 text={secondMessage}
                 delay={120}
-                className="font-main-text text-3xl md:text-4xl lg:text-5xl text-sky-800 font-bold tracking-wide drop-shadow-2xl"
+                className="font-main-text text-3xl md:text-4xl lg:text-5xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
                 onComplete={handleSecondTextComplete}
                 isActive={isActive}
               />
@@ -154,7 +154,7 @@ export function MamaScene({ onComplete, isActive }: MamaSceneProps) {
               <TypewriterText
                 text={thirdMessage}
                 delay={150}
-                className="font-main-text text-3xl md:text-4xl lg:text-5xl text-sky-600 font-bold tracking-wide drop-shadow-2xl"
+                className="font-main-text text-3xl md:text-4xl lg:text-5xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
                 onComplete={handleThirdTextComplete}
                 isActive={isActive}
               />

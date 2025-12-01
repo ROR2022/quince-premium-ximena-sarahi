@@ -155,7 +155,7 @@ export function MessageScene1({ onComplete, isActive }: MessageScene1Props) {
             <TypewriterText
               text={message}
               delay={80}
-              className={`font-main-text font-bold text-2xl md:text-3xl lg:text-4xl ${oroRosaText} text-center leading-relaxed drop-shadow-lg`}
+              className={`font-main-text font-bold text-2xl md:text-3xl lg:text-4xl text-amber-500 text-center leading-relaxed drop-shadow-lg`}
               onComplete={handleTextComplete}
               isActive={true}
             />
