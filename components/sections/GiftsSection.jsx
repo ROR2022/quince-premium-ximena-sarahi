@@ -86,7 +86,7 @@ export default function GiftsSection() {
               >
                 {gifts.type}
               </h3>
-              <p className="text-amber-500 font-main-text">{gifts.message}</p>
+              <p className="text-amber-500 italic">{gifts.message}</p>
             </div>
           </div>
           {/* Cards de opciones con animaciones escalonadas */}
@@ -105,9 +105,9 @@ export default function GiftsSection() {
                   }`}
                 >
                   <div className="bg-white/70 p-6 rounded-2xl w-64 text-black">
-                    <h4 className="text-xl font-medium font-main-text mb-2 text-amber-500">{option.name}</h4>
+                    <h4 className="text-xl font-medium italic mb-2 text-amber-500">{option.name}</h4>
                     <p className="text-4xl">{option.icon}</p>
-                    <p className=" text-amber-500 mt-2 font-main-text">
+                    <p className=" text-amber-500 mt-2 italic">
                       {option.description}
                     </p>
                   </div>

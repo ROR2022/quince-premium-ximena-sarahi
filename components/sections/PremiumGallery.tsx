@@ -147,7 +147,7 @@ export function PremiumGallery() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 -translate-y-12'
           }`}>
-            <p className="text-xl mb-2 text-amber-500 font-main-text">
+            <p className="text-xl mb-2 text-amber-500 italic">
               {gallery.subtitle}
             </p>
           </div>
@@ -158,7 +158,7 @@ export function PremiumGallery() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 -translate-y-12'
           }`}>
-            <p className="text-amber-500 font-main-text max-w-2xl mx-auto">
+            <p className="text-amber-500 italic max-w-2xl mx-auto">
               {gallery.description}
             </p>
           </div>
@@ -170,7 +170,7 @@ export function PremiumGallery() {
             ? 'opacity-100 scale-100' 
             : 'opacity-0 scale-75'
         }`}>
-          <div className="divider flex items-center justify-center my-4">
+          <div className="divider flex items-center justify-center">
             <div className="divider-icon">
               <Camera className="w-8 h-8" style={{ color: '#e3aaaa' }} />
             </div>
@@ -184,7 +184,7 @@ export function PremiumGallery() {
             : 'opacity-0 translate-y-8'
         }`}>
           <div>
-            <p className='text-amber-500 font-main-text'>Click en la imagen para ampliarla</p>
+            <p className='text-amber-500 italic'>Click en la imagen para ampliarla</p>
           </div>
         </div>
         {/* Galería principal con animación */}

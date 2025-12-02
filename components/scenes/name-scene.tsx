@@ -151,7 +151,7 @@ export function NameScene({ onComplete, isActive }: NameSceneProps) {
               <TypewriterText
                 text={thirdMessage}
                 delay={80}
-                className="font-main-text text-3xl md:text-5xl lg:text-6xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
+                className="font-main-text text-4xl md:text-5xl lg:text-6xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
                 onComplete={handleThirdTextComplete}
                 isActive={isActive}
               />
