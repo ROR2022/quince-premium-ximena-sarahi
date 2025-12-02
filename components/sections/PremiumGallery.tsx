@@ -147,7 +147,7 @@ export function PremiumGallery() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 -translate-y-12'
           }`}>
-            <p className="text-xl mb-2 text-sky-800 italic">
+            <p className="text-xl mb-2 text-amber-500 font-main-text">
               {gallery.subtitle}
             </p>
           </div>
@@ -158,7 +158,7 @@ export function PremiumGallery() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 -translate-y-12'
           }`}>
-            <p className="text-sky-600 max-w-2xl mx-auto">
+            <p className="text-amber-500 font-main-text max-w-2xl mx-auto">
               {gallery.description}
             </p>
           </div>
@@ -184,7 +184,7 @@ export function PremiumGallery() {
             : 'opacity-0 translate-y-8'
         }`}>
           <div>
-            <p className='text-sky-800'>Click en la imagen para ampliarla</p>
+            <p className='text-amber-500 font-main-text'>Click en la imagen para ampliarla</p>
           </div>
         </div>
         {/* Galería principal con animación */}

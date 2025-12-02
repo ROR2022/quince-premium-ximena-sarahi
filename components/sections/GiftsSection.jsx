@@ -79,14 +79,14 @@ export default function GiftsSection() {
               : 'opacity-0 scale-75'
           }`}>
             <div className="bg-muted/50 rounded-2xl p-4 max-w-md mx-auto">
-              <Gift className="w-16 h-16 text-sky-800 mx-auto mb-2" />
+              <Gift className="w-16 h-16 text-amber-500 mx-auto mb-2" />
               <h3 
                 style={{display:'none'}}
                 className="font-script text-3xl text-pink-600 mb-2"
               >
                 {gifts.type}
               </h3>
-              <p className="text-sky-600">{gifts.message}</p>
+              <p className="text-amber-500 font-main-text">{gifts.message}</p>
             </div>
           </div>
           {/* Cards de opciones con animaciones escalonadas */}
@@ -105,9 +105,9 @@ export default function GiftsSection() {
                   }`}
                 >
                   <div className="bg-white/70 p-6 rounded-2xl w-64 text-black">
-                    <h4 className="text-xl font-medium mb-2 text-amber-600">{option.name}</h4>
+                    <h4 className="text-xl font-medium font-main-text mb-2 text-amber-500">{option.name}</h4>
                     <p className="text-4xl">{option.icon}</p>
-                    <p className="text-muted text-pink-700">
+                    <p className=" text-amber-500 mt-2 font-main-text">
                       {option.description}
                     </p>
                   </div>

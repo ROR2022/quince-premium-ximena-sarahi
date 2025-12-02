@@ -125,7 +125,7 @@ export function ReceptionScene({ onComplete, isActive = true }: ReceptionScenePr
               <div className="animate-fade-in">
                 <button
                   onClick={handleOpenModal}
-                  className="bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 text-white font-bold px-12 py-6 rounded-full text-xl md:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-pink-500/50"
+                  className="bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 text-amber-500 font-main-text font-bold px-12 py-6 rounded-full text-xl md:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-pink-500/50"
                 >
                   💌 Confirmar Asistencia
                 </button>
