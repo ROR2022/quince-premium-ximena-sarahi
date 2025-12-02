@@ -193,7 +193,7 @@ export function PremiumGallery() {
             ? 'opacity-100 scale-100' 
             : 'opacity-0 scale-75'
         }`}>
-          <div className="relative h-64 md:h-80 mt-8 group">
+          <div className="relative h-64 md:h-80 group">
           <div className="w-full h-full flex justify-center">
             <div className="relative w-full max-w-2xl h-full overflow-hidden rounded-2xl shadow-xl border-4 border-white">
               {images.map((image, index) => (
