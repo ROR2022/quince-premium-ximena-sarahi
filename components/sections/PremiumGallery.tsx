@@ -113,7 +113,7 @@ export function PremiumGallery() {
         className="p-4 rounded-2xl max-w-4xl mx-auto text-center"
       >
         {/* Header premium con animaciones escalonadas */}
-        <div className="mb-12">
+        <div className="">
           {/* Badge con animación */}
           <div 
           style={{display:'none'}}
