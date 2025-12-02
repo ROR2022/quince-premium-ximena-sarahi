@@ -1,6 +1,6 @@
 export const quinceMainData = {
   hero: {
-    name: "Ximena Sarahi",
+    name: "Ximena Sarahí",
     subtitle: "¡Mis XV años!",
     backgroundImage: "/images/quince3.jpeg",
     quote:
@@ -18,11 +18,11 @@ export const quinceMainData = {
     backgroundImage: "/images/aurora_1.jpeg",
   },
   event: {
-    celebrant: "Ximena Sarahi",
+    celebrant: "Ximena Sarahí",
     //Padres María de Jesús Gutiérrez y Andres Ramírez
     parents: {
       father: "David", //ALEJANDRO CHANG LÓPEZ
-      mother: "Ericka", //NADYA JUAREZ YAÑEZ
+      mother: "Ericka Alejandra", //NADYA JUAREZ YAÑEZ
       message: `Hoy, mi corazón rebosa de gratitud. 
                 Doy gracias a Dios por cada paso de mi vida y a mis padres  
                 por cuidarme y guiarme en este camino.

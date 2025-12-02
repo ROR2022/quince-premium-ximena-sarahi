@@ -143,7 +143,7 @@ function SplashSceneContent({ onStart }: SplashSceneProps) {
                 <span className="relative text-2xl md:text-3xl lg:text-4xl text-white font-semibold drop-shadow-lg">¡Mis XV años!</span>
               </h2>
               <h1 className="relative text-4xl md:text-6xl lg:text-7xl text-white font-extrabold drop-shadow-lg">
-                Ximena Sarahi
+                Ximena Sarahí
               </h1>
             </div>
 
