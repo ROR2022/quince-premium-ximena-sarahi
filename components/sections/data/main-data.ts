@@ -22,7 +22,7 @@ export const quinceMainData = {
     //Padres María de Jesús Gutiérrez y Andres Ramírez
     parents: {
       father: "David", //ALEJANDRO CHANG LÓPEZ
-      mother: "Ericka Alejandra", //NADYA JUAREZ YAÑEZ
+      mother: "Erika Alejandra", //NADYA JUAREZ YAÑEZ
       message: `Hoy, mi corazón rebosa de gratitud. 
                 Doy gracias a Dios por cada paso de mi vida y a mis padres  
                 por cuidarme y guiarme en este camino.
