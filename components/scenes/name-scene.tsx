@@ -24,7 +24,7 @@ export function NameScene({ onComplete, isActive }: NameSceneProps) {
   const [videoError, setVideoError] = useState(false)
 
   const firstMessage = "¡La cuenta regresiva ha comenzado!"
-  const secondMessage = "FECHA ESPECIAL"
+  const secondMessage = "Fecha Especial"
   const thirdMessage = dateEvent
 
   // Handle video loading
