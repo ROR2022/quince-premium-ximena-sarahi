@@ -147,13 +147,15 @@ export function PremiumGallery() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 -translate-y-12'
           }`}>
-            <p className="text-xl mb-2 text-amber-500 italic">
+            <p className="text-3xl mb-2 text-amber-500 italic">
               {gallery.subtitle}
             </p>
           </div>
 
           {/* Descripción con animación */}
-          <div className={`transition-all duration-1000 delay-3000 ${
+          <div 
+          style={{display:'none'}}
+          className={`transition-all duration-1000 delay-3000 ${
             isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 -translate-y-12'
@@ -184,7 +186,7 @@ export function PremiumGallery() {
             : 'opacity-0 translate-y-8'
         }`}>
           <div>
-            <p className='text-amber-500 italic'>Click en la imagen para ampliarla</p>
+            <p className='text-amber-500 italic text-3xl font-semibold'>Click en la imagen para ampliarla</p>
           </div>
         </div>
         {/* Galería principal con animación */}

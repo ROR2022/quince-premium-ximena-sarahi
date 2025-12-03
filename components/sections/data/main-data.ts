@@ -218,14 +218,14 @@ Luis Mena
     title: "Lista de Regalos",
     subtitle: "Tu presencia es el mejor regalo, pero si deseas contribuir, aquí tienes algunas ideas.",
     message:
-      "Agradezco de corazón tu generosidad y apoyo en este día tan especial. ¡Gracias por ser parte de mi vida!",
+      "Agradezco de corazón tu generosidad y apoyo.",
     giftsOptions: [
       {
         id: "lluviaSobres",
         name: "Lluvia de Sobres",
         icon: "💌",
         description:
-          "Tu presencia es el mejor regalo, pero si deseas contribuir, una lluvia de sobres sería muy apreciada.",
+          "Me puedes dar efectivo.",
         image: "/images/gifts/envelope.png",
         link: "https://example.com/lluvia-de-sobres",
       },
@@ -234,7 +234,7 @@ Luis Mena
         name: "Regalo Sorpresa",
         icon: "🎁",
         description:
-          "Si prefieres dar un regalo físico, una sorpresa especial siempre es bienvenida.",
+          "Se que me encantará.",
         image: "/images/gifts/gift-box.png",
         link: "https://example.com/mesa-de-regalos",
       }

@@ -24,6 +24,7 @@ import { Papa2Scene } from "@/components/scenes/papa2-scene"
 import { AbuelosScene } from "@/components/scenes/abuelos-scene"
 import { ChambelanesScene } from "@/components/scenes/chambelanes-scene"
 import { PadrinosScene } from "@/components/scenes/padrinos-scene"
+import { PadresScene } from "@/components/scenes/padres-scene"
 
 const SCENE_DURATION = 9000 // 9 seconds per scene
 
@@ -90,19 +91,18 @@ export default function QuinceaneraInvitation() {
     <div className="relative w-full h-screen overflow-hidden">
       {currentScene === 0 && <TitleScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       {currentScene === 1 && <MessageScene1 onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 2 && <MamaScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 3 && <PapaScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 4 && <PadrinosScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 5 && <ChambelanesScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 6 && <NameScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 7 && <MessageScene3 onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 8 && <ParentsScene onComplete={handleSceneComplete} isActive={!isPaused} />}
-      {currentScene === 9 && <DateScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 2 && <PadresScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 3 && <PadrinosScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 4 && <ChambelanesScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 5 && <NameScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 6 && <MessageScene3 onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 7 && <ParentsScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 8 && <DateScene onComplete={handleSceneComplete} isActive={!isPaused} />}
+      {currentScene === 9 && <DressCodeScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       {currentScene === 10 && <ReceptionScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       {currentScene === 11 && <GalleryScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       {currentScene === 12 && <ScheduleScene onComplete={handleSceneComplete} isActive={!isPaused} />}
       
-
        {showAudioPlayer && <AudioPlayer src="/audio/musica.mp3" autoPlay startTime={5} />} 
 
       <SceneControls

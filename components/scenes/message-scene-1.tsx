@@ -27,11 +27,16 @@ export function MessageScene1({ onComplete, isActive }: MessageScene1Props) {
 
 
 
-  const message = `
+  /* const message = `
   Con el corazón lleno de gratitud, 
   agradezco a la vida por cada momento que me ha hecho soñar, crecer y sonreír.
   Hoy, al celebrar mis quince años, recibo esta nueva etapa con alegría, ilusión y esperanza, 
   agradeciendo a Dios por guiarme siempre y por todo lo maravilloso que está por venir. 🌷
+  ` */
+
+  const message = `
+  Con el corazón lleno de gratitud, 
+  agradezco a la vida por cada momento que me ha hecho soñar, crecer y sonreír.
   `
 
   // Handle video loading
@@ -155,7 +160,7 @@ export function MessageScene1({ onComplete, isActive }: MessageScene1Props) {
             <TypewriterText
               text={message}
               delay={80}
-              className={`font-main-text font-bold text-3xl md:text-4xl lg:text-5xl text-amber-500 text-center leading-relaxed drop-shadow-lg`}
+              className={`font-main-text font-bold text-4xl md:text-4xl lg:text-5xl text-amber-500 text-center leading-relaxed drop-shadow-lg`}
               onComplete={handleTextComplete}
               isActive={true}
             />

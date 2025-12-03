@@ -126,7 +126,7 @@ export function NameScene({ onComplete, isActive }: NameSceneProps) {
             <TypewriterText
               text={firstMessage}
               delay={100}
-              className="font-main-text text-4xl md:text-6xl lg:text-7xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
+              className="font-main-text text-5xl md:text-6xl lg:text-7xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
               onComplete={handleFirstTextComplete}
               isActive={isActive}
             />
@@ -138,7 +138,7 @@ export function NameScene({ onComplete, isActive }: NameSceneProps) {
               <TypewriterText
                 text={secondMessage}
                 delay={120}
-                className="font-main-text text-5xl md:text-7xl lg:text-8xl text-amber-500 font-bold tracking-wider drop-shadow-2xl"
+                className="font-main-text text-6xl md:text-7xl lg:text-8xl text-amber-500 font-bold tracking-wider drop-shadow-2xl"
                 onComplete={handleSecondTextComplete}
                 isActive={isActive}
               />
@@ -151,7 +151,7 @@ export function NameScene({ onComplete, isActive }: NameSceneProps) {
               <TypewriterText
                 text={thirdMessage}
                 delay={80}
-                className="font-main-text text-4xl md:text-5xl lg:text-6xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
+                className="font-main-text text-5xl md:text-5xl lg:text-6xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
                 onComplete={handleThirdTextComplete}
                 isActive={isActive}
               />
