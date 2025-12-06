@@ -4,6 +4,7 @@ import { Sparkles } from "@/components/sparkles"
 import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { quinceMainData } from "../sections/data/main-data"
+import  CountdownTimer  from "@/components/countdown-timer"
 
 const { videoFondos } = quinceMainData;
 
@@ -118,7 +119,7 @@ function SplashSceneContent({ onStart }: SplashSceneProps) {
         <div className="absolute inset-0 z-40 flex items-center justify-center bg-black/30">
           <div className="text-center space-y-4">
             <div className="animate-spin rounded-full h-16 w-16 border-4 border-pink-500 border-t-transparent mx-auto"></div>
-            <p className="text-white text-lg font-semibold">Cargando experiencia...</p>
+            <p className="text-amber-700 text-lg font-semibold">Cargando experiencia...</p>
           </div>
         </div>
       )}
@@ -134,34 +135,34 @@ function SplashSceneContent({ onStart }: SplashSceneProps) {
           {/* Enhanced message with better visibility */}
           <div className="relative">
             {/* Background blur effect for the message */}
-            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-full -m-4"></div>
+            <div className="absolute inset-0  -m-4"></div>
             {/* Main Title */}
             <div 
             //style={{display:'none'}}
             className="my-4">
               <h2>
-                <span className="relative text-2xl md:text-3xl lg:text-4xl text-white font-semibold drop-shadow-lg">¡Mis XV años!</span>
+                <span className="relative text-2xl md:text-3xl lg:text-4xl text-amber-700 font-semibold drop-shadow-lg">¡Mis XV años!</span>
               </h2>
-              <h1 className="relative text-4xl md:text-6xl lg:text-7xl text-white font-extrabold drop-shadow-lg">
+              <h1 className="relative text-4xl md:text-6xl lg:text-7xl text-amber-700 font-extrabold drop-shadow-lg">
                 Ximena Sarahí
               </h1>
             </div>
 
             <div
-            style={{display:'none'}}
+            //style={{display:'none'}}
             >
               {dataInvitation && (
                 <div>
-                  <p className="relative text-2xl md:text-3xl text-white font-medium drop-shadow-lg">
+                  <p className="relative text-2xl md:text-3xl text-amber-700 font-medium drop-shadow-lg">
                     Bienvenid@, {dataInvitation.guestName}!
                   </p>
                   {dataInvitation.specialMessage && (
-                    <p className="relative mt-2 text-lg md:text-xl text-white font-light italic drop-shadow-lg">
+                    <p className="relative mt-2 text-lg md:text-xl text-amber-700 font-light italic drop-shadow-lg">
                       "{dataInvitation.specialMessage}"
                     </p>
                   )}
                   {dataInvitation.numberOfGuests && (<div className="relative mt-2">
-                    <p className="relative text-lg md:text-xl text-white font-bold drop-shadow-lg">
+                    <p className="relative text-lg md:text-xl text-amber-700 font-bold drop-shadow-lg">
                       Pase para: {dataInvitation.numberOfGuests} invitado{dataInvitation.numberOfGuests > 1 ? 's' : ''}.
                     </p>
                   </div>
@@ -169,9 +170,17 @@ function SplashSceneContent({ onStart }: SplashSceneProps) {
                 </div>
               )}
             </div>
-            <p className="relative text-2xl md:text-3xl text-white font-medium animate-pulse drop-shadow-lg">
+            <p className="relative text-2xl md:text-3xl text-amber-700 font-medium animate-pulse drop-shadow-lg">
               ✨ Toca para comenzar ✨
             </p>
+            <div
+            style={{
+              position:'relative'
+            }}
+            >
+              <h5 className="text-2xl text-amber-700 mt-12 font-bold">Tan Solo Faltan:</h5>
+              <CountdownTimer />
+            </div>
           </div>
         </div>
       )}
@@ -187,7 +196,7 @@ function SplashSceneWrapper(props: SplashSceneProps) {
       <div className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#f5d5d8] via-[#e8c4c8] to-[#d4a5a8]">
         <div className="text-center space-y-4">
           <div className="animate-spin rounded-full h-16 w-16 border-4 border-pink-500 border-t-transparent mx-auto"></div>
-          <p className="text-white text-lg font-semibold">Cargando experiencia...</p>
+          <p className="text-amber-700 text-lg font-semibold">Cargando experiencia...</p>
         </div>
       </div>
     }>

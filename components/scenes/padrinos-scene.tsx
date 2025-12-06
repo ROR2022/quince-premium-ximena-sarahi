@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { Sparkles } from "@/components/sparkles"
-import { TypewriterText } from "@/components/typewriter-text"
-import { useState, useEffect } from "react"
+import { Sparkles } from "@/components/sparkles";
+import { TypewriterText } from "@/components/typewriter-text";
+import { useState, useEffect } from "react";
 
-import { quinceMainData } from "../sections/data/main-data"
+import { quinceMainData } from "../sections/data/main-data";
 
 const { videoFondos, event } = quinceMainData;
 
@@ -13,57 +13,59 @@ const padrino = event.godparents.godfather;
 const madrina = event.godparents.godmother;
 
 interface PadrinosSceneProps {
-  onComplete: () => void
-  isActive: boolean
+  onComplete: () => void;
+  isActive: boolean;
 }
 
 export function PadrinosScene({ onComplete, isActive }: PadrinosSceneProps) {
-  const [firstTextComplete, setFirstTextComplete] = useState(false)
-  const [secondTextComplete, setSecondTextComplete] = useState(false)
-  const [thirdTextComplete, setThirdTextComplete] = useState(false)
-  
-  const [videoLoaded, setVideoLoaded] = useState(false)
-  const [videoError, setVideoError] = useState(false)
+  const [firstTextComplete, setFirstTextComplete] = useState(false);
+  const [secondTextComplete, setSecondTextComplete] = useState(false);
+  const [thirdTextComplete, setThirdTextComplete] = useState(false);
+  const [fourthTextComplete, setFourthTextComplete] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
 
-  const firstMessage = "Mis Padrinos"
+  const firstMessage = "Mis Padrinos";
   const secondMessage = padrino;
   const thirdMessage = madrina;
-  
-  
+  const fourthMessage = "Gracias por su apoyo, su cariño y por acompañarme en este día tan especial. Los llevo siempre en mi corazón.";
+
   // Handle video loading
   const handleVideoLoaded = () => {
-    console.log('MamaScene - Video loaded successfully')
-    setVideoLoaded(true)
-  }
+    console.log("MamaScene - Video loaded successfully");
+    setVideoLoaded(true);
+  };
 
   const handleVideoError = () => {
-    console.log('MamaScene - Video failed to load, using fallback')
-    setVideoError(true)
-    setVideoLoaded(true) // Proceed with fallback image
-  }
+    console.log("MamaScene - Video failed to load, using fallback");
+    setVideoError(true);
+    setVideoLoaded(true); // Proceed with fallback image
+  };
 
   // Fallback timeout - if video doesn't load in 5 seconds, proceed anyway
   useEffect(() => {
     const fallbackTimer = setTimeout(() => {
       if (!videoLoaded) {
-        console.log('MamaScene - Video loading timeout, proceeding with fallback')
-        setVideoLoaded(true)
+        console.log(
+          "MamaScene - Video loading timeout, proceeding with fallback"
+        );
+        setVideoLoaded(true);
       }
-    }, 5000) // 5 second timeout
+    }, 5000); // 5 second timeout
 
-    return () => clearTimeout(fallbackTimer)
-  }, [videoLoaded])
+    return () => clearTimeout(fallbackTimer);
+  }, [videoLoaded]);
 
   // Handle 2 second delay before advancing to next scene
   useEffect(() => {
-    if (thirdTextComplete && isActive) {
+    if (fourthTextComplete && isActive) {
       const timer = setTimeout(() => {
         onComplete();
       }, 2000); // 2 seconds delay
 
       return () => clearTimeout(timer);
     }
-  }, [thirdTextComplete, isActive, onComplete]);
+  }, [fourthTextComplete, isActive, onComplete]);
 
   const handleFirstTextComplete = () => {
     setFirstTextComplete(true);
@@ -77,7 +79,10 @@ export function PadrinosScene({ onComplete, isActive }: PadrinosSceneProps) {
     setThirdTextComplete(true);
   };
 
-  
+  const handleFourthTextComplete = () => {
+    setFourthTextComplete(true);
+  };
+
   return (
     <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       <Sparkles count={20} />
@@ -93,9 +98,9 @@ export function PadrinosScene({ onComplete, isActive }: PadrinosSceneProps) {
         onCanPlay={handleVideoLoaded}
         onError={handleVideoError}
         style={{
-          filter: 'brightness(1.05) contrast(1.05)',
+          filter: "brightness(1.05) contrast(1.05)",
           opacity: videoLoaded && !videoError ? 1 : 0,
-          transition: 'opacity 0.5s ease-in-out'
+          transition: "opacity 0.5s ease-in-out",
         }}
       >
         <source src={message2Video.src} type="video/mp4" />
@@ -106,7 +111,7 @@ export function PadrinosScene({ onComplete, isActive }: PadrinosSceneProps) {
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             opacity: videoError ? 1 : 0,
-            transition: 'opacity 0.5s ease-in-out'
+            transition: "opacity 0.5s ease-in-out",
           }}
         />
       </video>
@@ -118,7 +123,9 @@ export function PadrinosScene({ onComplete, isActive }: PadrinosSceneProps) {
         <div className="absolute inset-0 z-40 flex items-center justify-center bg-black/30">
           <div className="text-center space-y-4">
             <div className="animate-spin rounded-full h-16 w-16 border-4 border-amber-500 border-t-transparent mx-auto"></div>
-            <p className="text-white text-lg font-semibold">Cargando experiencia...</p>
+            <p className="text-white text-lg font-semibold">
+              Cargando experiencia...
+            </p>
           </div>
         </div>
       )}
@@ -163,11 +170,20 @@ export function PadrinosScene({ onComplete, isActive }: PadrinosSceneProps) {
             </div>
           )}
 
-          
-
+          {/* Fourth Text */}
+          {thirdTextComplete && (
+            <div className="animate-fade-in rounded-2xl p-4 md:p-6 lg:p-8">
+              <TypewriterText
+                text={fourthMessage}
+                delay={100}
+                className="font-main-text text-3xl md:text-4xl lg:text-5xl text-amber-500 font-bold tracking-wide drop-shadow-2xl"
+                onComplete={handleFourthTextComplete}
+                isActive={isActive}
+              />
+            </div>
+          )}
         </div>
       )}
-
     </div>
-  )
+  );
 }
